@@ -1,0 +1,19 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  host: localhost
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  username: achei
+  password: <%= ENV['ACHEI_DATABASE_PASSWORD'] %>
+
+development:
+  <<: *default
+  database: achei_development
+
+test:
+  <<: *default
+  database: achei_test
+
+production:
+  <<: *default
+  database: achei_production
