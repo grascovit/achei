@@ -1,0 +1,7 @@
+language: ruby
+rvm:
+  - 2.3.0
+before_script:
+  - cp config/database.yml.travis config/database.yml
+  - psql -c 'create database achei_test;' -U postgres
+cache: bundler

@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/grascovit/achei.svg?branch=master)](https://travis-ci.org/grascovit/achei)
+
 # ACHEI
 
 To run the API, follow the steps below:
